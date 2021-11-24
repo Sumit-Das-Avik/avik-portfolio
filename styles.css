@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+a{
+    color: rgb(236, 222, 222);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile  */
+[class*="col-"]{
+    width: 100%;
+}
+
+/*-------------- navbar design starts here------------  */
+
+.navbar{
+    background-image: linear-gradient(black 70%, gray);
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav-logo img{
+    cursor: pointer;
+	width: 10em;
+	height: 8em;   
+}
+
+.navbar h1{
+    color: #4B3A9E;
+    margin: 0;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.navbar h1 span{
+    color: #E1C001;  
+    cursor: pointer;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+   
+}
+.navbar-menu a{
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+    color: #4B3A9E;
+    
+    
+}
+.navbar-menu a:hover{
+    background-color: #E1C001;
+    transition: all 0.3s ease;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*--------------- navbar design ends here--------------  */
+
+
+/*---------- profile design starts from here  --------*/
+.profile{
+    position: relative;
+    padding: 130px 10px;
+    text-align: center;
+}
+.profile .top-logo360{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+    width: 60px;
+    height: 60px;
+}
+.profile .top-logo360:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+}
+
+.profile-desc p{
+    color: gray;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    width: 90%;
+    font-family: 'PT Sans', sans-serif;  
+}
+
+.profile .bottom-logo360{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+    width: 60px;
+    height: 60px;
+}
+.profile .bottom-logo360:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* about me design starts here  */
+.about-me{
+    background-color: gray;
+    padding: 1% 7%;
+    color: black;
+    text-align: center;
+}
+.about-me h2{
+    color:black ;
+}
+
+.about-me-img img{
+    border: 5px solid #4B3A9E;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    cursor: pointer;
+}
+.about-me-img img:hover{
+    box-shadow: 0 4px 8px 5px black;
+    transition: all 0.5s ease;
+    
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 2rem;
+}
+.cv-button{
+    background-color:#4B3A9E;
+    color:#E1C001;
+    padding: 1.2em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+   
+}
+.cv-button:hover{
+    color:#4B3A9E;
+    background-color:#E1C001 ;
+    transition: all 0.5s ease;
+
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* about me design ends here  */
+
+/* professional-experience starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+   
+}
+.professional-experience h2{
+    text-align: center;
+}
+.professional-experience .card{
+    background-color: #4B3A9E;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 550px; 
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+.card-title h2{
+    background-color: #1d0352;
+    color: #E1C001;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+
+.skills-container li{
+   
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+li{
+    list-style: none;
+}
+
+.skills-container li::before{
+   content: '';
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+   width: 100%;
+   height: 10px;
+   background-color: rgb(86,86,153,.5);
+   border-radius: 1000px;
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+ 
+    width: 0;
+    height: 10px;
+    background-color: #E1C001;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+}
+    
+.skills-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+   to{
+       width: 70%;
+   }
+}
+
+.skills-container li.SMM::after{
+    animation-name: SMM;
+}
+@keyframes SMM{
+   to{
+       width: 85%;
+   }
+}
+.skills-container li.SEM::after{
+    animation-name: SEM;
+}
+@keyframes SEM{
+   to{
+       width: 50%;
+   }
+}
+.skills-container li.SEO::after{
+    animation-name: SEO;
+}
+@keyframes SEO{
+   to{
+       width: 25%;
+   }
+}
+.skills-container li.Email-marketing::after{
+    animation-name: Email-marketing;
+}
+@keyframes Email-marketing{
+   to{
+       width: 40%;
+   }
+}
+
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* professional-experience ends here  */
+
+/* achievement-contact starts from here  */
+
+.achievemnet-contact{
+    padding: 1% 7%;
+    background-color: gray;
+    color: black;
+
+
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+.contact button:hover{
+    background-color: black;
+    transition: all 0.5s ease;
+}
+
+
+.contact-links{
+    text-align: center;
+}
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+
+
+}
+
+.btn:hover{
+    background-color: gray;
+    transition: all 0.5s ease;
+}
+.achievemnet-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+
+/* footer starts from here  */
+.footer{
+    background-color:rgb(3, 22, 51) ;
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #ffffff;
+    
+}
+
+.footer-menu a:hover{
+    color: #4B3A9E;
+    transition: all 0.5s ease;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* footer ends here  */
